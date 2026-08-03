@@ -20,7 +20,7 @@ RUN iris start IRIS \
 RUN mkdir -p /usr/irissys/mgr/user/notebooks
 RUN python3 -m pip install notebook pandas matplotlib seaborn sqlalchemy-intersystems-iris
 
-COPY --chmod=+x entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY --chown=${ISC_PACKAGE_MGRUSER:ISC_PACKAGE_IRISGROUP} --chmod=+x entrypoint.sh /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # Set the default command to run Jupyter Notebook
