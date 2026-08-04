@@ -14,3 +14,9 @@ Open the terminal in this directory and run:
 ```
 $ docker-compose up -d
 ```
+
+## Load IRIS excel-py-iris Package
+
+```
+USER>zpm "install excel-py-iris"
+```
