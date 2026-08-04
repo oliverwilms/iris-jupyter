@@ -20,3 +20,9 @@ $ docker-compose up -d
 ```
 USER>zpm "install excel-py-iris"
 ```
+
+## Run python code to read an excel file and populate IRIS global
+
+```
+$ docker-compose exec -it iris-jupyter-iris-1 python3 /usr/irissys/mgr/python/iter_excel.py /opt/irisapp/excel/excel_python_iris.xlsx
+```
